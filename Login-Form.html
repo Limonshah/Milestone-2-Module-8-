@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <script src="https://kit.fontawesome.com/776cb67dc8.js" crossorigin="anonymous"></script>
+    <style>
+        nav a{
+            text-decoration: none;
+            color: black;
+
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+        }
+        .icon_title{
+            font-size: 30px;
+        }
+        .login-form{
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+        }
+        .login-form input{
+            margin-top: 15px;
+            font-size: 20px;
+            padding: 5px 10px;
+        }
+        input[type=email]:focus {
+    outline: none;
+    border: none;
+}
+input[type=password]:focus {
+    outline: none;
+    border: none;
+}
+input[type=submit] {
+    padding:5px 15px; 
+    background:rgb(112, 230, 238); 
+    border:0 none;
+    cursor:pointer;
+    color: rgb(255, 255, 255);
+    border-radius: 5px; 
+}
+.login-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.login_title{
+    text-align: center;
+}
+.menu_title span a{
+    font-size: 30px;
+    margin: 10px 20px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav class='menu_title'>
+                <span>
+                    <a href="">Home</a>
+                    <a href="">Dashboard</a>
+                    <a href="">Points</a>
+                    <a href="">Menu</a>
+                </span>
+                <span>
+                    <a href=""><i class="fa-solid fa-user"></i></a>
+                    <a href=""><i class="fa-solid fa-right-from-bracket"></i></a>
+                </span>
+        </nav>
+    </header>
+
+
+
+        <section class="login-container">
+            <form
+            class="login-form">
+            <h2 class="login_title">Please Login</h2>
+            <input type="email" name="" id="" placeholder="Your Email" required>
+            <input type="password" name="" id="" placeholder="Your PassWord" required>
+            <input type="submit" value="Login">
+        </form>
+        </section>
+</body>
+</html>
