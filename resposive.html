@@ -1,0 +1,74 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website</title>
+    <style>
+        .container img{
+            width: 100%;
+            border-radius: 5px;
+        }
+        .container-two .food_list{
+            width: 50%;
+        }
+        .food_list img{
+            width: 50%;
+            border: 2px solid royalblue;
+            padding: 10px;
+        }
+        .food_list{
+            margin-bottom: 15px;
+        }
+        .container-two{
+            display: flex;
+        }
+        @media screen and (max-width:576px) {
+            .container-two{
+                flex-direction: column;
+            }
+            .container-two .food_list{
+                width: 100%;
+            }            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1> WellCome to Khadok area </h1>
+        <img src="image/greg-rakozy.jpg" alt="greg-rakozy">
+    </div>
+    <section>
+        <h2>
+            Top Food List
+        </h2>
+        <div class="container-two">
+            <div class="food_list">
+                <img src="image/food.jpg" alt="food">
+            </div>
+            <div class="food_list">
+                <img src="image/meal.jpg" alt="breakfast">
+            </div>
+            <div class="food_list">
+                <img src="image/pasta.jpg" alt="breakfast">
+            </div>
+            <div class="food_list">
+                <img src="image/onions.jpg" alt="breakfast">
+            </div>
+            <div class="food_list">
+                <img src="image/breakfast.jpg" alt="breakfast">
+            </div>
+            <div class="food_list">
+                <img src="image/pasta.jpg" alt="breakfast">
+            </div>
+            <div class="food_list">
+                <img src="image/meal.jpg" alt="breakfast">
+            </div>
+            <div class="food_list">
+                <img src="image/breakfast.jpg" alt="breakfast">
+            </div>
+        </div>
+    </section>
+</body>
+</html>
